@@ -26,7 +26,7 @@ namespace DylanKards.Cards
                 new CardInfoStat()
                 {
                     positive = true,
-                    amount = "+10%",
+                    amount = "+20%",
                     simepleAmount = CardInfoStat.SimpleAmount.Some,
                     stat = "Ammo per second"
                 },
@@ -49,7 +49,7 @@ namespace DylanKards.Cards
 
         public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats, CharacterStatModifiers statModifiers, Block block)
         {
-            gun.ammoReg += 0.1f;
+            gun.ammoReg += 0.2f;
             gun.attackSpeed *= 1.25f;
             gun.damage *= 0.7f;
         }

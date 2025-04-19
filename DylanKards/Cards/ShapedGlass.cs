@@ -28,7 +28,7 @@ namespace DylanKards.Cards
                     positive = true,
                     amount = "x3",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned,
-                    stat = "Final Damage Multiplier\""
+                    stat = "Final Damage Multiplier"
                 },
                 new CardInfoStat()
                 {

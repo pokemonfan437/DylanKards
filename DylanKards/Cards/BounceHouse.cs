@@ -78,7 +78,7 @@ namespace DylanKards.Cards
                 new CardInfoStat()
                 {
                     positive = false,
-                    stat = "Damage per Bounce",
+                    stat = "Damage per bounce",
                     amount = "-20%",
                     simepleAmount = CardInfoStat.SimpleAmount.slightlyLower
                 },
