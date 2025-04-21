@@ -82,15 +82,19 @@ namespace DylanKards.Cards
         }
     }
 
+    
     public class AirStrikeEffect : CardEffect
     {
+        private float cursorX;
         private float airStrikeHeight = 19.5f;
-
+        
         public override void OnShoot(GameObject projectile)
         {
             var bounce = projectile.GetComponentInChildren<RayHitReflect>();
             if (bounce) { Destroy(bounce); }
-            float cursorX = MainCam.instance.cam.ScreenToWorldPoint(Input.mousePosition).x;
+            
+            // add some player checking here
+            cursorX = MainCam.instance.cam.ScreenToWorldPoint(Input.mousePosition).x;
 
             GameObject fakeTarget = new GameObject("FakeTarget");
             Transform fakeTransform = fakeTarget.transform;
