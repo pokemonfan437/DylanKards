@@ -58,9 +58,9 @@ namespace DylanKards.Cards
         {
             gun.attackSpeed /= 1000f;
             gun.attackSpeedMultiplier /= 1000f;
-            gun.bulletDamageMultiplier *= 0.5f;
-            gun.ammo += 100;
-            gun.reloadTimeAdd += 1f;
+            gun.bulletDamageMultiplier = 0.5f;
+            gun.ammo = 100;
+            gun.reloadTimeAdd = 1f;
             gun.spread += 0.1f;
         }
     }

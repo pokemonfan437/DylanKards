@@ -49,9 +49,9 @@ namespace DylanKards.Cards
 
         public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats, CharacterStatModifiers statModifiers, Block block)
         {
-            gun.ammoReg += 0.2f;
-            gun.attackSpeed *= 1.25f;
-            gun.damage *= 0.7f;
+            gun.ammoReg = 0.2f;
+            gun.attackSpeed = 1.25f;
+            gun.damage = 0.7f;
         }
     }
 }

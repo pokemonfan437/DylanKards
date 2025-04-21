@@ -30,13 +30,6 @@ namespace DylanKards.Cards
                 new CardInfoStat()
                 {
                     positive = true,
-                    amount = "Aerial",
-                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned,
-                    stat = "Bullets"
-                },
-                new CardInfoStat()
-                {
-                    positive = true,
                     amount = "Ignore",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned,
                     stat = "Terrain"
@@ -81,11 +74,11 @@ namespace DylanKards.Cards
 
         public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats, CharacterStatModifiers statModifiers, Block block)
         {
-            gun.attackSpeed *= 2f;
+            gun.attackSpeed = 2f;
             gun.ignoreWalls = true;
-            gun.projectileSpeed *= 1.5f;
-            gun.reloadTimeAdd += 1f;
-            gun.damage *= 0.5f;
+            gun.projectileSpeed = 1.5f;
+            gun.reloadTimeAdd = 1f;
+            gun.damage = 0.5f;
         }
     }
 

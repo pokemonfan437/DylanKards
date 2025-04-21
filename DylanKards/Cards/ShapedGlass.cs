@@ -56,10 +56,10 @@ namespace DylanKards.Cards
 
         public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats, CharacterStatModifiers statModifiers, Block block)
         {
-            gun.bulletDamageMultiplier *= 3f;
-            statModifiers.health *= 0.25f;
-            gun.reloadTimeAdd += 1f;
-            gun.attackSpeed *= 1.25f;
+            gun.bulletDamageMultiplier = 3f;
+            statModifiers.health = 0.25f;
+            gun.reloadTimeAdd = 1f;
+            gun.attackSpeed = 1.25f;
         }
     }
 }
