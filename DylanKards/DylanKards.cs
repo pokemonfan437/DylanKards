@@ -21,7 +21,7 @@ namespace DylanKards
     {
         private const string ModId = "com.pokemonfan.rounds.DylanKards";
         private const string ModName = "Dylan Kards";
-        public const string Version = "1.0.1"; // What version are we on (major.minor.patch)?
+        public const string Version = "1.0.2"; // What version are we on (major.minor.patch)?
         public const string ModInitials = "DK";
         public static DylanKards instance { get; private set; }
 
