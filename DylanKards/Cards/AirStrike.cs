@@ -11,6 +11,7 @@ using UnityEngine.Assertions;
 using CardChoiceSpawnUniqueCardPatch.CustomCategories;
 using Photon.Compression;
 using Photon.Pun.Simple;
+using Photon.Pun;
 
 
 namespace DylanKards.Cards
@@ -81,32 +82,32 @@ namespace DylanKards.Cards
             gun.damage = 0.5f;
         }
     }
-
     
     public class AirStrikeEffect : CardEffect
     {
-        private float cursorX;
+        private float cursorX = 0f;
         private float airStrikeHeight = 19.5f;
         
         public override void OnShoot(GameObject projectile)
         {
             var bounce = projectile.GetComponentInChildren<RayHitReflect>();
             if (bounce) { Destroy(bounce); }
-            
-            // add some player checking here
-            cursorX = MainCam.instance.cam.ScreenToWorldPoint(Input.mousePosition).x;
+
+            Player owner = projectile.GetComponentInChildren<Player>();
 
             GameObject fakeTarget = new GameObject("FakeTarget");
             Transform fakeTransform = fakeTarget.transform;
+            if (owner.data.view.IsMine || PhotonNetwork.OfflineMode)
+            {
+                cursorX = MainCam.instance.cam.ScreenToWorldPoint(Input.mousePosition).x;
+            }
             fakeTarget.transform.SetXPosition(cursorX);
             fakeTarget.transform.SetYPosition(0f);
             fakeTarget.transform.SetZPosition(0f);
-            //gun.shootPosition = fakeTarget.transform;
             
 
             //base.OnShoot(projectile);
             projectile.SetPosition(new Vector3(cursorX, airStrikeHeight), IncludedAxes.XY); // shoot bullet from offscreen at cursor's x position
-            //projectile.GetComponent<MoveTransform>().velocity = new Vector3(0f, projectile.transform.);
             projectile.transform.LookAt(fakeTransform);
         }
     }
