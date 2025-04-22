@@ -42,7 +42,7 @@ namespace DylanKards.Cards
         }
         protected override CardInfo.Rarity GetRarity()
         {
-            return CardInfo.Rarity.Uncommon;
+            return CardInfo.Rarity.Common;
         }
         protected override CardInfoStat[] GetStats()
         {
@@ -59,7 +59,7 @@ namespace DylanKards.Cards
                 {
                     positive = false,
                     stat = "Reload Time",
-                    amount = "+0.5s",
+                    amount = "+0.25s",
                     simepleAmount = CardInfoStat.SimpleAmount.aLittleBitOf
                 }
             };

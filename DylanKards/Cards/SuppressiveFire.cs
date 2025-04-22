@@ -26,16 +26,9 @@ namespace DylanKards.Cards
                 new CardInfoStat()
                 {
                     positive = true,
-                    amount = "+1000000%",
+                    amount = "Max",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned,
                     stat = "Attack Speed"
-                },
-                new CardInfoStat()
-                {
-                    positive = false,
-                    amount = "-50%",
-                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned,
-                    stat = "Final Damage"
                 },
                 new CardInfoStat()
                 {
@@ -43,6 +36,13 @@ namespace DylanKards.Cards
                     amount = "Max",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned,
                     stat = "Ammo"
+                },
+                new CardInfoStat()
+                {
+                    positive = false,
+                    amount = "Half",
+                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned,
+                    stat = "Final Damage"
                 },
                 new CardInfoStat()
                 {

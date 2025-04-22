@@ -15,13 +15,14 @@ Adds 8 cards
 2. Ammo Regen
     "Regenerates ammo each second"
       - +20% Ammo per second
+	- +5 Ammo
 	  - +25% Attack Speed
 	  - -30% Damage
 
 3. Big Damage
      "Damage goes big."
       - +50% Damage
-      - +0.5s Reload Time
+      - +0.25s Reload Time
 
 4. Blocked
      "You have been blocked."
@@ -54,7 +55,7 @@ Adds 8 cards
 	  
 8. Suppresive Fire
      "SUPPRESSIVE FIRE!"
-      - +1000000% Attack Speed
-	  - -50% Final Damage Multiplier
+      - Max Attack Speed
 	  - Max Ammo
+	  - -50% Final Damage Multiplier
 	  - +1s Reload Time
