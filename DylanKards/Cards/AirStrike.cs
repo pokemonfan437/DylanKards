@@ -12,6 +12,7 @@ using CardChoiceSpawnUniqueCardPatch.CustomCategories;
 using Photon.Compression;
 using Photon.Pun.Simple;
 using Photon.Pun;
+using UnityEngine.Experimental.PlayerLoop;
 
 
 namespace DylanKards.Cards
@@ -93,22 +94,30 @@ namespace DylanKards.Cards
             var bounce = projectile.GetComponentInChildren<RayHitReflect>();
             if (bounce) { Destroy(bounce); }
 
-            Player owner = projectile.GetComponentInChildren<Player>();
+            
 
             GameObject fakeTarget = new GameObject("FakeTarget");
             Transform fakeTransform = fakeTarget.transform;
-            if (owner.data.view.IsMine || PhotonNetwork.OfflineMode)
+            if (player.data.view.IsMine || PhotonNetwork.OfflineMode)
             {
                 cursorX = MainCam.instance.cam.ScreenToWorldPoint(Input.mousePosition).x;
             }
             fakeTarget.transform.SetXPosition(cursorX);
             fakeTarget.transform.SetYPosition(0f);
             fakeTarget.transform.SetZPosition(0f);
-            
 
-            //base.OnShoot(projectile);
             projectile.SetPosition(new Vector3(cursorX, airStrikeHeight), IncludedAxes.XY); // shoot bullet from offscreen at cursor's x position
             projectile.transform.LookAt(fakeTransform);
+            if (fakeTransform) { Destroy(fakeTransform); }
+            if (fakeTarget) { Destroy(fakeTarget); }
+        }
+
+        public void Update()
+        {
+            if(player.data.view.IsMine || PhotonNetwork.OfflineMode)
+            {
+                cursorX = MainCam.instance.cam.ScreenToWorldPoint(Input.mousePosition).x;
+            }
         }
     }
 }
