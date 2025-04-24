@@ -18,7 +18,7 @@ namespace DylanKards.Cards
             Title = "Shaped Glass",
             Description = "Triples your damage at the cost of your health.",
             ModName = DylanKards.ModInitials,
-            Art = null,
+            Art = Assets.ShapedGlassArt,
             Rarity = CardInfo.Rarity.Rare,
             Theme = CardThemeColor.CardThemeColorType.ColdBlue,
             Stats = new[]

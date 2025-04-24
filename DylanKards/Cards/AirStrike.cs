@@ -24,7 +24,7 @@ namespace DylanKards.Cards
             Title = "Air Strike",
             Description = "Deliver bullets to your opponents from above, while also compressing your bullets.",
             ModName = DylanKards.ModInitials,
-            Art = null,
+            Art = Assets.AirStrikeArt,
             Rarity = CardInfo.Rarity.Rare,
             Theme = CardThemeColor.CardThemeColorType.FirepowerYellow,
             Stats = new[]
@@ -86,7 +86,7 @@ namespace DylanKards.Cards
     
     public class AirStrikeEffect : CardEffect
     {
-        private float cursorX = 0f;
+        public float cursorX = 0f;
         private float airStrikeHeight = 19.5f;
         
         public override void OnShoot(GameObject projectile)

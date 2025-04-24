@@ -18,7 +18,7 @@ namespace DylanKards.Cards
             Title = "Suppressive Fire",
             Description = "SUPPRESSIVE FIRE!",
             ModName = DylanKards.ModInitials,
-            Art = null,
+            Art = Assets.SuppressiveFireArt,
             Rarity = CardInfo.Rarity.Rare,
             Theme = CardThemeColor.CardThemeColorType.FirepowerYellow,
             Stats = new[]
@@ -56,12 +56,12 @@ namespace DylanKards.Cards
 
         public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats, CharacterStatModifiers statModifiers, Block block)
         {
-            gun.attackSpeed /= 1000f;
-            gun.attackSpeedMultiplier /= 1000f;
+            gun.attackSpeed = 0.001f;
+            gun.attackSpeedMultiplier = 0.001f;
             gun.bulletDamageMultiplier = 0.5f;
             gun.ammo = 100;
             gun.reloadTimeAdd = 1f;
-            gun.spread += 0.1f;
+            gun.spread = 0.1f;
         }
     }
 }

@@ -53,7 +53,7 @@ Adds 8 cards
 	  - +1s Reload Time
 	  - -25% Attack Speed
 	  
-8. Suppresive Fire
+8. Suppressive Fire
      "SUPPRESSIVE FIRE!"
       - Max Attack Speed
 	  - Max Ammo

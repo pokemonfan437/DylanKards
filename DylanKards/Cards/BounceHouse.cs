@@ -15,18 +15,18 @@ namespace DylanKards.Cards
         public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats, CharacterStatModifiers statModifiers, Block block)
         {
             //Edits values on card itself, which are then applied to the player in `ApplyCardStats`
+            gun.reflects = 10;
+            gun.projectielSimulatonSpeed = 1.5f;
+            gun.projectileSpeed = 1.5f;
+            gun.dmgMOnBounce = 0.8f;
+            gun.speedMOnBounce = 1.5f;
+            gun.knockback = 5f;
+            gun.reloadTimeAdd = 1f;
+            gun.projectileColor = new Color(0f, 0.7f, 1f);
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
         {
             //Edits values on player when card is selected
-            gun.reflects += 10;
-            gun.projectielSimulatonSpeed *= 1.5f;
-            gun.projectileSpeed *= 1.5f;
-            gun.dmgMOnBounce *= 0.8f;
-            gun.speedMOnBounce *= 1.5f;
-            gun.knockback *= 5f;
-            gunAmmo.reloadTimeAdd += 1f;
-            gun.projectileColor = new Color(0f, 0.7f, 1f); // bullet turns blue (suggestion from doboom
         }
         public override void OnRemoveCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
         {
@@ -44,7 +44,7 @@ namespace DylanKards.Cards
         }
         protected override GameObject GetCardArt()
         {
-            return null;
+            return Assets.BounceHouseArt;
         }
         protected override CardInfo.Rarity GetRarity()
         {

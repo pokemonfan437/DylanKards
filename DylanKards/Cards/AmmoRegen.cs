@@ -18,7 +18,7 @@ namespace DylanKards.Cards
             Title = "Ammo Regen",
             Description = "Regenerate ammo each second.",
             ModName = DylanKards.ModInitials,
-            Art = null,
+            Art = Assets.AmmoRegenArt,
             Rarity = CardInfo.Rarity.Uncommon,
             Theme = CardThemeColor.CardThemeColorType.FirepowerYellow,
             Stats = new[]
@@ -58,7 +58,7 @@ namespace DylanKards.Cards
         {
             gun.ammoReg = 0.2f;
             gun.ammo = 5;
-            gun.attackSpeed = 1.25f;
+            gun.attackSpeed = 0.75f;
             gun.damage = 0.7f;
         }
     }

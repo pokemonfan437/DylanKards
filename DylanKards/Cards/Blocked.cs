@@ -15,14 +15,14 @@ namespace DylanKards.Cards
         public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats, CharacterStatModifiers statModifiers, Block block)
         {
             //Edits values on card itself, which are then applied to the player in `ApplyCardStats`
+            block.cdMultiplier = 0.5f;
+            statModifiers.health = 2f;
+            gun.damage = 0.5f;
+            gun.attackSpeed = 2f;
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
         {
             //Edits values on player when card is selected
-            block.cdMultiplier *= 0.5f;
-            statModifiers.health *= 2f;
-            gun.damage *= 0.5f;
-            gun.attackSpeed *= 2f;
         }
         public override void OnRemoveCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
         {
@@ -40,7 +40,7 @@ namespace DylanKards.Cards
         }
         protected override GameObject GetCardArt()
         {
-            return null;
+            return Assets.BlockedArt;
         }
         protected override CardInfo.Rarity GetRarity()
         {
