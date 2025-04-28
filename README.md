@@ -3,14 +3,10 @@ Some modded rounds cards I made for fun
 Adds 8 cards
 
 1. Airstrike
-    "Deliver bullets to your opponents from above, while also compressing your bullets."
-      - Aerial Bullets
-      - Ignore Terrain
-      - No Spread
-      - +50% Bullet Speed
-	  - -50% Damage
-	  - -100% Attack Speed
-	  - +1s Reload Time
+    "Additionally fires an airstrike every time you shoot."
+	  - -30% Damage
+	  - -50% Attack Speed
+	  - +0.5s Reload Time
 
 2. Ammo Regen
     "Regenerates ammo each second"

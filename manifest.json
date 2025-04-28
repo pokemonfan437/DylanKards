@@ -1,12 +1,13 @@
 {
     "name": "DylanKards",
-    "version_number": "1.2.0",
+    "version_number": "1.3.0",
     "website_url": "https://github.com/pokemonfan437/DylanKards",
     "description": "Some modded rounds cards I made for fun",
     "dependencies": [
         "willis81808-UnboundLib-3.2.14",
         "Pykess-ModdingUtils-0.4.8",
         "Pykess-CardChoiceSpawnUniqueCardPatch-0.1.10",
-        "willis81808-ModsPlus-1.6.2"
+        "willis81808-ModsPlus-1.6.2",
+	"willuwontu-SimulationChamber-0.0.3"
     ]
 }
