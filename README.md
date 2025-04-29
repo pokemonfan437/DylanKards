@@ -12,8 +12,8 @@ Adds 8 cards
     "Regenerates ammo each second"
       - +20% Ammo per second
 	- +5 Ammo
-	  - +25% Attack Speed
-	  - -30% Damage
+	- +25% Attack Speed
+	- -30% Damage
 
 3. Big Damage
      "Damage goes big."
@@ -30,12 +30,11 @@ Adds 8 cards
 5. Bounce House
      "High-impact, high-speed bouncy bullets."
       - +10 Bounces
-      - +50% Projectile Speed
-	  - +50% Bullet Speed
-	  - -20% Damage per bounce
-	  - +50% Speed per bounce
+	  - +30% Bullet Speed
+	  - -10% Damage per bounce
+	  - +15% Speed per bounce
 	  - +400% Knockback
-	  - +1s Reload Time
+	  - +0.5s Reload Time
 	  
 6. Cosine
      "Your bullets follow a sine wave instead of a straight line."

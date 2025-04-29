@@ -15,13 +15,20 @@ namespace DylanKards.Cards
         public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats, CharacterStatModifiers statModifiers, Block block)
         {
             //Edits values on card itself, which are then applied to the player in `ApplyCardStats`
+            var bouncy = (GameObject)Resources.Load("0 cards/Bouncy");
+            var voidBounce = bouncy.GetComponent<Gun>().objectsToSpawn[0];
+
+            gun.objectsToSpawn = new[]
+            {
+                voidBounce
+            };
+
             gun.reflects = 10;
-            gun.projectielSimulatonSpeed = 1.5f;
-            gun.projectileSpeed = 1.5f;
-            gun.dmgMOnBounce = 0.8f;
-            gun.speedMOnBounce = 1.5f;
+            gun.projectileSpeed = 1.3f;
+            gun.dmgMOnBounce = 0.9f;
+            gun.speedMOnBounce = 1.15f;
             gun.knockback = 5f;
-            gun.reloadTimeAdd = 1f;
+            gun.reloadTimeAdd = 0.5f;
             gun.projectileColor = new Color(0f, 0.7f, 1f);
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
@@ -63,30 +70,23 @@ namespace DylanKards.Cards
                 },
                 new CardInfoStat()
                 {
-                    positive = true,
-                    stat = "Projectile Speed",
-                    amount = "+50%",
-                    simepleAmount = CardInfoStat.SimpleAmount.Some
-                },
-                new CardInfoStat()
-                {
-                    positive = true,
+                    positive = false,
                     stat = "Bullet Speed",
-                    amount = "+50%",
-                    simepleAmount = CardInfoStat.SimpleAmount.Some
+                    amount = "+30%",
+                    simepleAmount = CardInfoStat.SimpleAmount.aLittleBitOf
                 },
                 new CardInfoStat()
                 {
                     positive = false,
                     stat = "Damage per bounce",
-                    amount = "-20%",
+                    amount = "-10%",
                     simepleAmount = CardInfoStat.SimpleAmount.slightlyLower
                 },
                 new CardInfoStat()
                 {
                     positive = true,
                     stat = "Speed per bounce",
-                    amount = "+50%",
+                    amount = "+15%",
                     simepleAmount = CardInfoStat.SimpleAmount.Some
                 },
                 new CardInfoStat()
@@ -100,7 +100,7 @@ namespace DylanKards.Cards
                 {
                     positive = false,
                     stat = "Reload Time",
-                    amount = "+1s",
+                    amount = "+0.5s",
                     simepleAmount = CardInfoStat.SimpleAmount.Some
                 }
             };
