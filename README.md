@@ -54,3 +54,16 @@ Adds 8 cards
 	  - Max Ammo
 	  - -50% Final Damage Multiplier
 	  - +1s Reload Time
+9. Double Boom
+	"Your bullets explode on impact and shortly after, creating a double boom."
+	- -20% Damage
+	- -50% Attack Speed
+	- +0.5s Reload Time
+10. EZ-Aim
+	"Why bother aiming when your bullets can do it for you?"
+	- Homing Bullets
+	- Sneaky Bullets
+	- Targeted Bounces
+	- +1 Bounce
+	- -40% Damage
+	- +0.5s Reload Time

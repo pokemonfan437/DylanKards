@@ -18,7 +18,7 @@ namespace DylanKards.Cards
             block.cdMultiplier = 0.5f;
             statModifiers.health = 2f;
             gun.damage = 0.5f;
-            gun.attackSpeed = 2f;
+            gun.attackSpeed = 1.5f;
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
         {
@@ -75,7 +75,7 @@ namespace DylanKards.Cards
                 {
                     positive = false,
                     stat = "Attack Speed",
-                    amount = "-100%",
+                    amount = "-50%",
                     simepleAmount = CardInfoStat.SimpleAmount.aLotLower
                 }
             };

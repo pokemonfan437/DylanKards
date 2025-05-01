@@ -40,14 +40,21 @@ namespace DylanKards.Cards
                 new CardInfoStat()
                 {
                     positive = false,
-                    amount = "Half",
+                    amount = "-50%",
+                    simepleAmount = CardInfoStat.SimpleAmount.aLotLower,
+                    stat = "Damage"
+                },
+                new CardInfoStat()
+                {
+                    positive = false,
+                    amount = "-75%",
                     simepleAmount = CardInfoStat.SimpleAmount.notAssigned,
                     stat = "Final Damage"
                 },
                 new CardInfoStat()
                 {
                     positive = false,
-                    amount = "+1s",
+                    amount = "+100%",
                     simepleAmount = CardInfoStat.SimpleAmount.aLotOf,
                     stat = "Reload Time"
                 }
@@ -58,9 +65,10 @@ namespace DylanKards.Cards
         {
             gun.attackSpeed = 0.001f;
             gun.attackSpeedMultiplier = 0.001f;
-            gun.bulletDamageMultiplier = 0.5f;
+            gun.damage = 0.5f;
+            gun.bulletDamageMultiplier = 0.25f;
             gun.ammo = 100;
-            gun.reloadTimeAdd = 1f;
+            gun.reloadTime = 2f;
             gun.spread = 0.1f;
         }
     }

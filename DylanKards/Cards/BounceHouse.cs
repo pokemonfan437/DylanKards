@@ -70,7 +70,7 @@ namespace DylanKards.Cards
                 },
                 new CardInfoStat()
                 {
-                    positive = false,
+                    positive = true,
                     stat = "Bullet Speed",
                     amount = "+30%",
                     simepleAmount = CardInfoStat.SimpleAmount.aLittleBitOf
