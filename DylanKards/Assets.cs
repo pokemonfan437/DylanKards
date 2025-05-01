@@ -18,6 +18,8 @@ namespace DylanKards
         public static GameObject AmmoRegenArt = Bundle.LoadAsset<GameObject>("C_AmmoRegen");
         public static GameObject SuppressiveFireArt = Bundle.LoadAsset<GameObject>("C_SuppressiveFire");
         public static GameObject ShapedGlassArt = Bundle.LoadAsset<GameObject>("C_ShapedGlass");
+        public static GameObject DoubleBoomArt = Bundle.LoadAsset<GameObject>("C_DoubleBoom");
+        public static GameObject EZAimArt = Bundle.LoadAsset<GameObject>("C_EZAim");
 
     }
 }

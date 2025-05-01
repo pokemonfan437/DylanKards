@@ -18,7 +18,7 @@ namespace DylanKards.Cards
             Title = "EZ-Aim",
             Description = "Why bother aiming when your bullets can do it for you?",
             ModName = DylanKards.ModInitials,
-            Art = null,
+            Art = Assets.EZAimArt,
             Rarity = CardInfo.Rarity.Rare,
             Theme = CardThemeColor.CardThemeColorType.TechWhite,
             Stats = new[]

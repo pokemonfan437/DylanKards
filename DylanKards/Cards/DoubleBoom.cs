@@ -18,7 +18,7 @@ namespace DylanKards.Cards
             Title = "Double Boom",
             Description = "Your bullets explode on impact and shortly after, creating a double boom.",
             ModName = DylanKards.ModInitials,
-            Art = null,
+            Art = Assets.DoubleBoomArt,
             Rarity = CardInfo.Rarity.Uncommon,
             Theme = CardThemeColor.CardThemeColorType.DestructiveRed,
             Stats = new[]
