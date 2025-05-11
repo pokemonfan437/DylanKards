@@ -24,10 +24,11 @@ namespace DylanKards.Cards
             };
 
             gun.reflects = 10;
+            gun.damage = 0.6f;
             gun.projectileSpeed = 1.3f;
-            gun.dmgMOnBounce = 0.9f;
+            gun.dmgMOnBounce = 0.8f;
             gun.speedMOnBounce = 1.15f;
-            gun.knockback = 5f;
+            gun.knockback = 2f;
             gun.reloadTimeAdd = 0.5f;
             gun.projectileColor = new Color(0f, 0.7f, 1f);
         }
@@ -70,6 +71,13 @@ namespace DylanKards.Cards
                 },
                 new CardInfoStat()
                 {
+                    positive = false,
+                    stat = "Damage",
+                    amount = "-40%",
+                    simepleAmount = CardInfoStat.SimpleAmount.aLotLower
+                },
+                new CardInfoStat()
+                {
                     positive = true,
                     stat = "Bullet Speed",
                     amount = "+30%",
@@ -79,7 +87,7 @@ namespace DylanKards.Cards
                 {
                     positive = false,
                     stat = "Damage per bounce",
-                    amount = "-10%",
+                    amount = "-20%",
                     simepleAmount = CardInfoStat.SimpleAmount.slightlyLower
                 },
                 new CardInfoStat()
@@ -93,7 +101,7 @@ namespace DylanKards.Cards
                 {
                     positive = true,
                     stat = "Knockback",
-                    amount = "+400%",
+                    amount = "+100%",
                     simepleAmount = CardInfoStat.SimpleAmount.aHugeAmountOf
                 },
                 new CardInfoStat()

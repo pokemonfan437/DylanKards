@@ -58,6 +58,13 @@ namespace DylanKards.Cards
                 },
                 new CardInfoStat()
                 {
+                    positive = false,
+                    stat = "Trajectory",
+                    amount = "Wavy",
+                    simepleAmount = CardInfoStat.SimpleAmount.notAssigned
+                },
+                new CardInfoStat()
+                {
                     positive = true,
                     stat = "Damage",
                     amount = "+50%",

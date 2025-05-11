@@ -13,7 +13,7 @@ Adds 8 cards
       - +20% Ammo per second
 	- +5 Ammo
 	- +25% Attack Speed
-	- -30% Damage
+	- -50% Damage
 
 3. Big Damage
      "Damage goes big."
@@ -25,15 +25,16 @@ Adds 8 cards
       - -50% Block Cooldown
       - +100% Health
 	  - -50% Damage
-	  - -100% Attack Speed
+	  - -50% Attack Speed
 	  
 5. Bounce House
      "High-impact, high-speed bouncy bullets."
       - +10 Bounces
+	  - -40% Damage
 	  - +30% Bullet Speed
-	  - -10% Damage per bounce
+	  - -20% Damage per bounce
 	  - +15% Speed per bounce
-	  - +400% Knockback
+	  - +100% Knockback
 	  - +0.5s Reload Time
 	  
 6. Cosine
@@ -52,11 +53,12 @@ Adds 8 cards
      "SUPPRESSIVE FIRE!"
       - Max Attack Speed
 	  - Max Ammo
-	  - -50% Final Damage Multiplier
-	  - +1s Reload Time
+	  - -50% Damage
+	  - -80% Final Damage Multiplier
+	  - +100% Reload Time
 9. Double Boom
 	"Your bullets explode on impact and shortly after, creating a double boom."
-	- -20% Damage
+	- -40% Damage
 	- -50% Attack Speed
 	- +0.5s Reload Time
 10. EZ-Aim
@@ -65,5 +67,6 @@ Adds 8 cards
 	- Sneaky Bullets
 	- Targeted Bounces
 	- +1 Bounce
-	- -40% Damage
+	- -50% Damage
+	- -50% Attack Speed
 	- +0.5s Reload Time

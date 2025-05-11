@@ -54,9 +54,16 @@ namespace DylanKards.Cards
                 new CardInfoStat()
                 {
                     positive = false,
-                    amount = "-40%",
+                    amount = "-50%",
                     simepleAmount = CardInfoStat.SimpleAmount.aLotLower,
                     stat = "Damage"
+                },
+                new CardInfoStat()
+                {
+                    positive = false,
+                    amount = "-50%",
+                    simepleAmount = CardInfoStat.SimpleAmount.aLotLower,
+                    stat = "Attack Speed"
                 },
                 new CardInfoStat()
                 {
@@ -80,7 +87,8 @@ namespace DylanKards.Cards
             var target = targetBounce.GetComponent<Gun>().objectsToSpawn[1];
 
             gun.objectsToSpawn = new[] { homing, sneaky, voidBounce, target };
-            gun.damage = 0.6f;
+            gun.damage = 0.5f;
+            gun.attackSpeed = 1.5f;
             gun.reloadTimeAdd = 0.5f;
             gun.reflects = 1;
         }

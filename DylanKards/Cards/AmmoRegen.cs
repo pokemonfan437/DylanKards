@@ -47,7 +47,7 @@ namespace DylanKards.Cards
                 new CardInfoStat()
                 {
                     positive = false,
-                    amount = "-30%",
+                    amount = "-50%",
                     simepleAmount = CardInfoStat.SimpleAmount.slightlyLower,
                     stat = "Damage"
                 }
@@ -59,7 +59,7 @@ namespace DylanKards.Cards
             gun.ammoReg = 0.2f;
             gun.ammo = 5;
             gun.attackSpeed = 0.75f;
-            gun.damage = 0.7f;
+            gun.damage = 0.5f;
         }
     }
 }

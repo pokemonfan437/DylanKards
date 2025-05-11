@@ -26,7 +26,7 @@ namespace DylanKards.Cards
                 new CardInfoStat()
                 {
                     positive = false,
-                    amount = "-20%",
+                    amount = "-40%",
                     simepleAmount = CardInfoStat.SimpleAmount.slightlyLower,
                     stat = "Damage"
                 },
@@ -55,7 +55,7 @@ namespace DylanKards.Cards
             var boom2 = timedDetonation.GetComponent<Gun>().objectsToSpawn[0];
 
             gun.objectsToSpawn = new[] { boom1, boom2 };
-            gun.damage = 0.8f;
+            gun.damage = 0.6f;
             gun.attackSpeed = 1.5f;
             gun.reloadTimeAdd = 0.5f;
         }
